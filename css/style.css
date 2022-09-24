@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 * {
   font-family: "Outfit", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 body, main {
@@ -17,7 +17,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 8%;
+  min-height: 100vh;
 }
 
 .main-img {
@@ -45,8 +45,8 @@ main {
   border-radius: 1rem;
   padding: 1rem;
   width: 22%;
-  max-width: 295px;
-  min-width: 295px;
+  max-width: 18.4375rem;
+  min-width: 18.4375rem;
   background-color: hsl(216deg, 50%, 16%);
   color: hsl(215deg, 51%, 70%);
 }
@@ -55,7 +55,7 @@ main {
   padding: 1rem 0;
   font-weight: 700;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
 }
 .card .card-title:hover {
   color: hsl(178deg, 100%, 50%);
@@ -66,31 +66,30 @@ main {
 }
 .card .card-body .description {
   font-weight: 300;
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 .card .card-body .current-info {
   display: flex;
   justify-content: space-between;
-  font-size: 0.85rem;
 }
 .card .card-body .current-info .icon-etherum {
   background-repeat: no-repeat;
   color: hsl(178deg, 100%, 50%);
   padding-left: 1.2rem;
   font-weight: 400 !important;
-  font-size: 0.85rem;
   background-size: 0.7rem;
+  font-size: 0.95rem;
 }
 .card .card-body .current-info .icon-clock {
   background-repeat: no-repeat;
   padding-left: 1.5rem;
   background-size: 1.225rem;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
 }
 .card .footer p {
   padding: 1rem 0 0 0;
   border-top: 0.1rem solid hsl(215deg, 32%, 27%);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
 }
 .card .footer p span a {
   color: white;
