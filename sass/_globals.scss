@@ -1,0 +1,116 @@
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$very-dark-blue1: hsl(217, 54%, 11%); //(main BG)
+$very-dark-blue2: hsl(216, 50%, 16%); //(card BG)
+$very-dark-blue3: hsl(215, 32%, 27% );//(line))
+$white: hsl(0, 0%, 100%);
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+// - Font size (paragraph): 18px
+*{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    // 300, 400, 600
+}
+body, main{
+    background-color: $very-dark-blue1;
+}
+img{
+    width: 100%;
+    border-radius: 1rem !important;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8%;
+}
+.main-img{
+    position: relative;
+}
+.overlay-img{
+    background: rgba(0,255,255, 0.5);
+    border-radius: 1rem;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-img:hover .overlay-img{
+    width: 100%;
+}
+
+.card{
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 22%;
+    max-width: 295px;
+    min-width: 295px;
+    background-color: $very-dark-blue2;
+    color: $soft-blue;
+    .card-title{
+        color: $white;
+        padding: 1rem 0;
+        font-weight: 700;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    .card-title:hover{
+        color: $cyan;
+        cursor: pointer;
+    }
+    .card-body{
+        padding: 0;
+        .description{
+            font-weight: 300;
+            font-size: 0.85rem;
+        }
+        .current-info{
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            .icon-etherum{
+                background-repeat: no-repeat;
+                color: $cyan;
+                padding-left: 1.2rem;
+                font-weight: 400 !important;
+                font-size: 0.85rem;
+                background-size: 0.7rem;
+            }
+            .icon-clock{
+                background-repeat: no-repeat;
+                padding-left: 1.5rem;
+                background-size: 1.225rem;
+                font-size: 0.85rem;           
+            }
+        }
+    }
+    .footer{
+        p{
+            padding: 1rem 0 0 0;
+            border-top: 0.1rem solid $very-dark-blue3;
+            font-size: 0.85rem;
+            span{
+                a{
+                    color: white;
+                    font-size: 0.85rem;
+                }
+                a:hover{
+                    color: $cyan;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.avatar{
+    width: 10%;
+    border: 0.1rem solid white;
+    margin-right: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
