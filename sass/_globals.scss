@@ -5,10 +5,10 @@ $very-dark-blue2: hsl(216, 50%, 16%); //(card BG)
 $very-dark-blue3: hsl(215, 32%, 27% );//(line))
 $white: hsl(0, 0%, 100%);
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
-// - Font size (paragraph): 18px
+
 *{
     font-family: 'Outfit', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     // 300, 400, 600
 }
 body, main{
@@ -22,7 +22,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 8%;
+    // Cambio
+    min-height:100vh
 }
 .main-img{
     position: relative;
@@ -48,8 +49,8 @@ main{
     border-radius: 1rem;
     padding: 1rem;
     width: 22%;
-    max-width: 295px;
-    min-width: 295px;
+    max-width: 18.4375rem;
+    min-width: 18.4375rem;
     background-color: $very-dark-blue2;
     color: $soft-blue;
     .card-title{
@@ -57,7 +58,7 @@ main{
         padding: 1rem 0;
         font-weight: 700;
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1.35rem;
     }
     .card-title:hover{
         color: $cyan;
@@ -67,25 +68,24 @@ main{
         padding: 0;
         .description{
             font-weight: 300;
-            font-size: 0.85rem;
+            font-size: 1rem;
         }
         .current-info{
             display: flex;
             justify-content: space-between;
-            font-size: 0.85rem;
             .icon-etherum{
                 background-repeat: no-repeat;
                 color: $cyan;
                 padding-left: 1.2rem;
                 font-weight: 400 !important;
-                font-size: 0.85rem;
                 background-size: 0.7rem;
+                font-size: 0.95rem;
             }
             .icon-clock{
                 background-repeat: no-repeat;
                 padding-left: 1.5rem;
                 background-size: 1.225rem;
-                font-size: 0.85rem;           
+                font-size: 0.95rem;       
             }
         }
     }
@@ -93,7 +93,7 @@ main{
         p{
             padding: 1rem 0 0 0;
             border-top: 0.1rem solid $very-dark-blue3;
-            font-size: 0.85rem;
+            font-size: 0.95rem;
             span{
                 a{
                     color: white;
