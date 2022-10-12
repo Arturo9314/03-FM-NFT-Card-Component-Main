@@ -11,19 +11,25 @@ $white: hsl(0, 0%, 100%);
     font-size: 1.125rem;
     // 300, 400, 600
 }
-body, main{
+body{
     background-color: $very-dark-blue1;
-}
-img{
-    width: 100%;
-    border-radius: 1rem !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    // Cambio
-    min-height:100vh
+    flex-direction: column;
+    ::selection{
+        background-color: hsl(217, 54%, 11%);
+    }
+}
+img{
+    width: 100%;
+    border-radius: 1rem !important;
 }
 .main-img{
     position: relative;

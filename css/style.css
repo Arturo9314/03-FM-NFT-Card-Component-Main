@@ -4,20 +4,27 @@
   font-size: 1.125rem;
 }
 
-body, main {
+body {
   background-color: hsl(217deg, 54%, 11%);
-}
-
-img {
-  width: 100%;
-  border-radius: 1rem !important;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  flex-direction: column;
+}
+main ::selection {
+  background-color: hsl(217deg, 54%, 11%);
+}
+
+img {
+  width: 100%;
+  border-radius: 1rem !important;
 }
 
 .main-img {
